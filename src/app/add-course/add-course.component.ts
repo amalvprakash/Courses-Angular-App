@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-course.component.css']
 })
 export class AddCourseComponent {
+  courseTitle =""
+  courseDescription=""
+  courseDate=""
+  courseDuration=""
+  courseVenue=""
 
+  readValues = () =>{
+    let data:any={"courseTitle":this.courseTitle,"courseDescription":this.courseDescription,
+    "courseDuration":this.courseDuration,"courseDate":this.courseDate,"courseVenue":this.courseVenue}
+    console.log(data)
+  }
 }
